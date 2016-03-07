@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MECA | Submissions</title>
+	<link rel="stylesheet" type="text/css" href="css_and_ai/styles.css">
+	
+	<!-- ICON FOR BROWSER TAG -->
+	<link rel="apple-touch-icon" sizes="57x57" href="pictures/browser_icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="pictures/browser_icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="pictures/browser_icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="pictures/browser_icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="pictures/browser_icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="pictures/browser_icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="pictures/browser_icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="pictures/browser_icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="pictures/browser_icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="pictures/browser_icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="pictures/browser_icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="pictures/browser_icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="pictures/browser_icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="pictures/browser_icon/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="pictures/browser_icon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	
+</head>
+<body>
+	<div class="nav">
+		<a href="index.html">
+			<img src="pictures/MecaLogo3.JPG" alt="Meca Logo"/>
+		</a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="submissions.html"><b>Submission Board</b></a></li>
+		</ul>
+	</div>
+	
+		<!--  input Type and name submit type and value  -->
+		<div class="submit">
+			<div class="submissionBoard">
+				<img src="pictures/submissions_page/storyboard.gif" alt="picture of astronaut"/>
+				<form action="//formspree.io/mecastories@gmail.com"  method="POST">
+					<p>Name: <input type="text" name="name"></p>
+					<p>Email: <input type="email" name="email"></p>
+					<p>Title: <input type="text" name="title"></p>
+					<p>Story: <textarea name="story"></textarea> </p>
+					<input type="hidden" name="_next" value="http://localhost:8080/MECA/submissions.html" />
+					<input type="hidden" name="_subject" value="Your MECA submission" />
+					<input type="text" name="_gotcha" style="display:none" />
+					<input type="submit" class="submit"  onclick="myFunction()" value="Submit">
+				</form>
+			</div> 
+		</div>
+		<script>
+			function myFunction() {
+			    alert("Thank you for submitting to MECA!");
+			}
+		</script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+@CHARSET "ISO-8859-1";
+/******************MOBILE FIRST******************/
+/************************RESPONSIVE DESIGN******************************/
+
+@media (max-width: 1024px) {
+
+	/********Hamburger **********/
+	.menu-btn div {
+		position: absolute;
+		left: 100%;
+		top: 64%;
+		padding-right: 8px;
+		margin-top: -0.50em;
+		line-height: 1.2;
+		font-size: 18px;
+		font-weight: 200;
+		vertical-align: middle;
+		z-index: 99;
+	}
+	
+	.menu-btn span {
+		display: block;
+		width: 19px;
+		height: 3px;
+		margin: 4px 0;
+		background: rgb(0,0,0);
+		z-index: 99;
+	}
+	
+	.nav{
+		display: none;
+	}
+	
+	.expand {
+		display: block !important; 
+	}
+
+
+
+/******************TEMPLATE******************/
+/******************NAVIGATION******************/
+body{
+	width: 95%;
+}
+.nav{
+	position:fixed;
+	width:95%;
+	bottom: 88%;
+	border-top: 20px solid white;
+  	background-color: white;
+  	margin-left:2%;
+  	z-index: 100;
+}
+.nav img{
+	
+	float:left;
+	width: 19%;
+}
+.nav ul {
+	width: 80%;
+    list-style-type: none;
+    padding: 0;
+    float: right;
+    margin-top: 10px;
+    border-right: solid red;
+    border-top: solid red;
+    border-bottom: solid red;
+}
+.nav li {
+    margin-left:60px;
+    display: inline;
+}
+.nav a{
+	margin-left: 15%;
+}
+.nav a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:visited{
+	color: black;
+}
+
+/****************** INDEX AKA STORIES ******************/
+.storiesContent{
+	margin-top: 200px;
+	display: flex;
+	margin-left: 3%;
+}
+
+.firstRow, .secondRow, .thirdRow{
+	width:90%;
+}
+
+
+.storiesContent img{
+	border-radius: 40px 1px 40px;
+	width: 100%;
+}
+
+figcaption{
+}
+
+.mainPicture {
+	height: 500px;
+}
+.smallerPicsNextToLarge{
+	height: 225px;
+	float:left;
+}
+/****************** INDEX AKA STORIES | Colorbox for how  ******************/
+
+.storyPageContent{
+	width:90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* .storyPageContent h1{
+ 	width:60%;
+	margin-left: auto;
+	margin-right: auto; 
+	margin-bottom: 50px;
+} */
+
+
+.storyPageContent img{
+	float:left;
+	width: 50%;
+	border-radius: 40px 1px 40px;
+	margin-right: 5%;
+}
+
+/* .backToStories{
+	float:left;
+	color:red;
+	text-decoration:none;
+} */
+/****************** ABOUT & Meet The Creators ******************/
+
+.meetTheCreators img{
+	width:100%;
+}
+
+.meetTheCreators h4{
+	margin-top: 155px;
+	margin-left:43%;
+}
+
+.Jadel {
+	width:47%;
+	float: right;
+	margin-left: 30px;
+}
+.Valenta {
+	width: 47%;
+	float: left;
+}
+/******************ABOUT / SUBMISSIONS******************/
+.submissionBoard form, .aboutContent {
+	margin-top: 245px;
+	margin-left:5%;
+}
+.wrapAbout img{
+	width: 47%;
+	float: right;
+	margin-right:1px;
+}
+
+.wrapAbout p{
+	width:47%;
+}
+.submissionBoard input {
+	float:right;
+	width: 55%;
+}
+.submissionBoard img {
+	width: 37%;
+	float: right;
+	margin-right:1px;
+}
+.submissionBoard textarea{
+	margin-left:5.5%;
+	width: 55%;
+	height: 260px;
+}
+
+
+/****************** INDEX-NO-LONGER_USED ******************/
+
+.indexContent{
+	position:fixed;
+	left: 50%;
+	bottom: 1%;
+}
+
+.signInContent{
+	position:fixed;
+	left: 40%;
+}
+.with{
+	color:gray;
+}
+
+.borderForExploreMECA{
+	border: 1px solid red;
+}
+
+
+	
+}
